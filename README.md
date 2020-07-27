@@ -9,22 +9,23 @@
 "PreContour_Py"のディレクトリ構成は以下の通りです.
 
 ```
-PreContour_Py
-│  customized_contour.py
-│  default_contour.py
+"PreContour_Py"
+│  PreContour.py
+├─Conts
+│      DCont.py
+│      __init__.py
 ├─csv
 ├─gadm36_JPN_shp
 └─img
 ```
 
-* "default_contour.py"は,CUI操作でグラフの設定(範囲,閾値,グラフタイトル)を行うことができます.
-* "customized_contour.py"は,ソースコードを編集し,グラフの設定が自由に行うことができます.(※コメントアウトを充実させて,後日コミットします.)
+* "PreContour.py"は,CUI操作でグラフの設定(範囲,閾値,グラフタイトル)を行うことができるPythonファイルです.
 * "csv"は,緯度,経度,降水量データが入ったcsvファイルを格納するディレクトリです.
 * "img"は,コンター図を出力するディレクトリです.
 * [gadm36_JPN_shp](https://gadm.org/download_country_v3.html)は,地図描画用のデータが格納されたディレクトリです.
 
 # 必要要件
-OS:Windows,Python:anacondaの環境下であることを前提とします.
+OS:Windows,Python:Anacondaの環境下であることを前提とします.
 
 作成者の実行環境は以下の通りです.
 * Windows 10
@@ -51,11 +52,9 @@ conda install -c conda-forge cartopy
 cd ***/PreContour_Py
 ```
 
-➁"default_contour.py"か"customized_contour.py"を実行.
+➁"default_contour.py"か"PreContour.py"を実行.
 ```
-python default_contour.py
-Or
-python customized_contour.py
+python PreContour.py
 ```
  
 # その他
