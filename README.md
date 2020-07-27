@@ -22,7 +22,7 @@
 * "PreContour.py"は,CUI操作でグラフの設定(範囲,閾値,グラフタイトル)を行うことができるPythonファイルです.
 * "csv"は,緯度,経度,降水量データが入ったcsvファイルを格納するディレクトリです.
 * "img"は,コンター図を出力するディレクトリです.
-* [gadm36_JPN_shp](https://gadm.org/download_country_v3.html)は,地図描画用のデータが格納されたディレクトリです.
+* ["gadm36_JPN_shp"](https://gadm.org/download_country_v3.html)は,地図描画用のデータが格納されたディレクトリです.
 
 # 必要要件
 OS:Windows,Python:Anacondaの環境下であることを前提とします.
